@@ -4,13 +4,15 @@
 
 为 App 图标与产品标识提供高品质的图标艺术指导。
 
-![带有一道琥珀色玻璃切缝的石墨色方板](assets/readme/hero.svg)
+Iconlume 将产品简报转化为独特的视觉隐喻，再写成结构化的英文图像生成提示词；有实际渲染图时，它评审图像本身，而不是生成图像的提示词。
 
-_概念习作：一道光切过石墨色方板。矢量几何，不是生成的图标。_
+## 生成示例
 
-Iconlume 是一个纯文档 skill：它把具体的产品简介转化为不同的视觉隐喻，再写成结构化的英文图像生成提示词；有实际渲染图时，它评审图像本身，而不是凭提示词想象结果。
+![六个生成的 App 图标：上排 Pleatnote、Stillpoint、Dovetail，下排 Cairn、Timbre、Coat](assets/demos/gallery.webp)
 
-## 示例
+_六份虚构的产品简报，每张图都是按随附提示词实际生成的位图渲染。上排：Pleatnote（笔记）、Stillpoint（专注计时）、Dovetail（开发者工具）。下排：Cairn（个人理财）、Timbre（音频）、Coat（调色）。[简报与完整提示词](examples/demo-icons.md)。_
+
+## 工作示例
 
 需求：“为一个本地优先的笔记应用设计 App 图标。”
 
@@ -24,7 +26,7 @@ Iconlume 是一个纯文档 skill：它把具体的产品简介转化为不同�
 
 **提示词节选：** "One lifted paper leaf over an offset two-leaf stack, matte paper on dark ceramic, one amber accent, soft upper-left light, generous margin, plain field, no text, no UI, no mockup."
 
-本示例未生成图片；若有渲染图，应评审实际图像。完整方法与另一份说明性简报见 [OverBench 示例](examples/overbench-example.md)。
+本工作示例未生成图片；它是另一份笔记类简报，不是上方画廊中的 Pleatnote 图标。[OverBench 示例](examples/overbench-example.md) 用另一份说明性简报展示完整方法；[演示图标](examples/demo-icons.md) 则把另外六份简报一路做到实际渲染图。
 
 ## 工作方式
 
@@ -65,12 +67,13 @@ git -C ~/.claude/skills/iconlume pull --ff-only
 - [references/prompt-system.md](references/prompt-system.md)：五区块提示词模板与改写示例。
 - [references/review-rubric.md](references/review-rubric.md)：证据规则、质量门槛与可观察的评分锚点。
 - [examples/overbench-example.md](examples/overbench-example.md)：从概念到提示词的完整说明性示例。
-- [assets/readme/hero.svg](assets/readme/hero.svg)：上方展示的矢量概念习作。
+- [examples/demo-icons.md](examples/demo-icons.md)：六个生成演示的简报、单图与完整提示词。
+- [assets/demos/](assets/demos/)：画廊拼图与六张单个演示图标图片。
 
 ## 使用边界
 
-- 提示词与评审流程是纯文本，无需图像工具。
-- 只有客户端具备可用工具且用户明确提出时，才会生成渲染图或导出文件。
-- 图像模型的输出是位图，不是矢量母版。
+- 提示词与评审流程无需图像工具也能使用；渲染是可选的后续步骤。
+- 只有具备可用图像工具且用户明确提出时，才会生成渲染图或导出文件。
+- 生成的输出是位图，不是矢量母版。
 - 不负责商标检索、唯一性检查或法律确认。
-- 上方 hero 是概念习作，不是其他产品的默认主体或配色。
+- 演示中的产品名称与简报均为虚构示例，不是已获授权的品牌，也不是客户项目。

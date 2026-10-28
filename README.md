@@ -4,11 +4,13 @@
 
 Premium icon art direction for app icons and product marks.
 
-![Graphite tile with one diagonal amber glass seam](assets/readme/hero.svg)
+Iconlume turns a product brief into distinct visual metaphors, then into a structured English image-generation prompt. When a render exists, it critiques that actual image rather than the prompt that produced it.
 
-_Concept study: one cut of light through a graphite tile. Vector geometry, not a generated icon._
+## Generated examples
 
-Iconlume is a documentation-only skill for turning a concrete product brief into distinct visual metaphors, then into a structured English image-generation prompt. When an actual render exists, it critiques that image rather than the prompt that produced it.
+![Six generated app icons: Pleatnote, Stillpoint, and Dovetail on the top row; Cairn, Timbre, and Coat on the bottom row](assets/demos/gallery.webp)
+
+_Six fictional product briefs, each rendered as an actual raster image from its accompanying prompt. Top row: Pleatnote (notes), Stillpoint (focus), Dovetail (developer tools). Bottom row: Cairn (personal finance), Timbre (audio), Coat (color grading). [Briefs and full prompts](examples/demo-icons.md)._
 
 ## Worked example
 
@@ -24,7 +26,7 @@ Brief: "Design an app icon for a local-first notes app."
 
 **Prompt excerpt:** "One lifted paper leaf over an offset two-leaf stack, matte paper on dark ceramic, one amber accent, soft upper-left light, generous margin, plain field, no text, no UI, no mockup."
 
-No image was generated; when one is, review that actual render, and see the [full OverBench example](examples/overbench-example.md) for the complete method and another illustrative brief.
+No image was generated for this worked example; it is a separate notes brief, not the Pleatnote icon in the gallery above. The [full OverBench example](examples/overbench-example.md) applies the complete method to another illustrative brief, and the [demo icons](examples/demo-icons.md) carry six different briefs through to actual renders.
 
 ## How it works
 
@@ -65,12 +67,13 @@ Repository: [github.com/amigoer/iconlume](https://github.com/amigoer/iconlume)
 - [references/prompt-system.md](references/prompt-system.md): the five-block prompt template and rewrite examples.
 - [references/review-rubric.md](references/review-rubric.md): evidence rules, quality gates, and observable scoring anchors.
 - [examples/overbench-example.md](examples/overbench-example.md): a full illustrative concept-to-prompt walkthrough.
-- [assets/readme/hero.svg](assets/readme/hero.svg): the vector concept study shown above.
+- [examples/demo-icons.md](examples/demo-icons.md): briefs, individual images, and full prompts for the six generated demos.
+- [assets/demos/](assets/demos/): the gallery contact sheet and the six individual demo icon images.
 
 ## Limits
 
-- The prompt and review workflow is text-only and works without image tools.
-- Renders and exports are produced only when a capable tool is available and the user requests them.
-- Image-model output is raster, not a vector master.
+- The prompt and review workflow works without image tools; rendering is an optional step.
+- Renders and exports are produced only when a capable image tool is available and the user requests them.
+- Generated output is raster, not a vector master.
 - Trademark clearance, uniqueness checks, and legal approval are outside its scope.
-- The hero is a concept study, not a default subject or palette for new work.
+- The demo product names and briefs are fictional and illustrative, not cleared brands or customer work.
